@@ -61,19 +61,24 @@ if(CMAKE_SYSTEM_NAME STREQUAL "Windows")
 endif()
 
 # Adds a plugin target.
-set(TREMOLO_PLUGIN_NAME "TODO: set your plugin name")
+set(TREMOLO_PLUGIN_NAME "Tremolo")
 juce_add_plugin(
   TremoloCoursePlugin
   PRODUCT_NAME
     ${TREMOLO_PLUGIN_NAME}
   VERSION
-    # TODO: add version
+        1.0.0
+    # add version
   COMPANY_NAME
-    # TODO: add company
+    "Rad Cat Audio Technologies"
+    # add company
+        BUNDLE_ID "com.radcataudiotechnologies.tremolo"
   PLUGIN_MANUFACTURER_CODE
-    # TODO: add plugin manufacturer code
+        Rcat
+    # add plugin manufacturer code
   PLUGIN_CODE
-    # TODO: add plugin code
+        Trem
+    # add plugin code
   FORMATS
     Standalone
     AU
@@ -87,7 +92,7 @@ juce_add_plugin(
   VST3_AUTO_MANIFEST
     FALSE
   COPY_PLUGIN_AFTER_BUILD
-    FALSE
+    TRUE
 )
 
 # Configures the JUCE sources included in the plugin target.
