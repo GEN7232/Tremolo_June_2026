@@ -72,7 +72,7 @@ juce_add_plugin(
   COMPANY_NAME
     "Rad Cat Audio Technologies"
     # add company
-        BUNDLE_ID "com.radcataudiotechnologies.tremolo"
+        BUNDLE_ID "net.radcataudio.tremolo"
   PLUGIN_MANUFACTURER_CODE
         Rcat
     # add plugin manufacturer code
