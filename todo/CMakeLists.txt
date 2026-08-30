@@ -70,7 +70,7 @@ juce_add_plugin(
         1.0.0
     # add version
   COMPANY_NAME
-    "Rad Cat Audio Technologies"
+    "Rad Cat Audio"
     # add company
         BUNDLE_ID "net.radcataudio.tremolo"
   PLUGIN_MANUFACTURER_CODE
