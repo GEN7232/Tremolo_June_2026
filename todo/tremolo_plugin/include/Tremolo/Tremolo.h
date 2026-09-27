@@ -40,7 +40,7 @@ public:
 
       // calculate the modulation value
       constexpr auto modulationDepth = 0.4f;
-      const auto modulationValue = modulationDepth * lfoValue + 1.f;
+      const auto modulationValue = (modulationDepth * lfoValue) + 1.f;
 
       // for each channel sample in the frame
       for (const auto channelIndex :
