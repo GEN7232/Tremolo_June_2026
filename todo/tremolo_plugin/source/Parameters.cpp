@@ -13,6 +13,15 @@ namespace tremolo {
       processor.addParameter(parameter.release());
       return parameterReference;
     }
+    juce::AudioParameterFloat& createGainParameter(juce::AudioProcessor& processor) {
+      constexpr auto versionHint = 1;
+      auto parameter = std::make_unique<juce::AudioParameterFloat>(
+        juce::ParameterID{"gain", versionHint},
+        "Gain",
+        juce::NormalisableRange<float>{-12.f, 12.f, 0.1f, 1.f},
+        0.f,
+        juce::AudioParameterFloatAttributes{}.withLabel("dB"));
+    }
   }
 
 Parameters::Parameters(juce::AudioProcessor& processor)
